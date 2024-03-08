@@ -1,0 +1,22 @@
+body{
+    background-color: aliceblue;
+}
+h1{
+    color: rgb(255, 10, 10);
+
+    font-size: 145px;
+}
+/* img{
+    background-color: rgb(186, 59, 27);
+} */
+.bacon{
+    background-color: rgb(238, 5, 5);
+}
+.broccoli{
+    background-color: rgb(19, 222, 19);
+}
+#p1{
+    color: #ffbc00;
+    font-size: 50px;
+    
+}

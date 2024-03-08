@@ -1,0 +1,36 @@
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: bisque;
+}
+
+p{
+    height: 75%;
+    width: 75%;
+    background-color: blueviolet;
+    overflow: auto;
+ 
+}
+#Mountain{
+    width: 200px;
+    height: 200px;
+}
+#descroption{
+    max-width: 350px;
+    min-width: 250px;
+    min-height: 200px;
+    max-height: 250px;
+    padding: 5px;
+    text-align: center;
+
+}
+.Testing_Anchor:link{
+    text-decoration: none;
+    color: rgb(89, 87, 40);
+}
+.Testing_Anchor:visited{
+    color: black;
+}
+.Testing_Anchor:hover,:active{
+    background-color: aqua;
+}

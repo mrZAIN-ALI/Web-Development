@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>Roll no</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Zain </td>
+                <td>23</td>
+            </tr>
+
+            <tr>
+                <td>Farjad </td>
+                <td>56</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <form action="backend.php">
+        <!-- <div>
+            <label for="img">Enter Your Image : </label>
+            <input type="image" src="" alt="" id="img">
+        </div> -->
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="mail">Email : </label>
+            <input type="email" name="mail" id="mail">
+        </div>
+        <div>
+            <label for="passw">password : </label>
+            <input type="password" name="pass" id="passw">
+        </div>
+        <div>
+            <label for="roll">Role : </label>
+            <input type="text" id="roll">
+        </div>
+        <div>
+            <label for="da">DOB : </label>
+            <input type="date" id="da">
+        </div>
+        <div>
+            <label for="loc_Data">What is Date When you are fillinh this form : </label>
+            <input type="datetime-local" name="" id="loc_Data">
+        </div>
+
+        <div>
+            <!-- <label for="ganeder"></label> -->
+            Gender: Male<input type="radio" name="mygender" id="" checked> Female  <input type="radio" name="mygender" id=""> ohters  <input type="radio" name="mygender" id="">
+        </div>
+        <div>
+            <label for="adult">Are your overr 18 :</label>
+           <input type="checkbox" name="" id="adult" checked>
+        </div>
+        <div>
+            <label for="colour">Enter color of your proj : </label>
+            <input type="color" name="color" id="colour">
+        </div>
+        <div>
+            <label for="file">Upload Attested Doucuments :</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            Enter Your Weekness: <input type="hidden" name="hidd">
+        </div>
+        <div>
+            <label for="num">Enter your Number of Attemts : </label>
+            <input type="number" name="" id="num">
+        </div>
+        <div>
+            <label for="In_url">Enter Your Linkded in profile :</label>
+            <input type="url" name="" id="In_url">
+        </div>
+        <div>
+            <label for="tele">Enter Your Phone number : </label>
+            <input type="tel" name="" id="tele">
+        </div>
+        <div>
+            <label for="Exper">Enter Your Experience: </label>
+            <input type="range" name="" id="Exper" >
+        </div>
+        <div>
+            <label for="sub">Submit </label>
+            <input type="submit" value="" id="sub">
+            <label for="reset">Rest Form</label>
+            <input type="reset" value="" id="reset">
+        </div>
+
+    </form>
+</body>
+</html>

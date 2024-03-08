@@ -1,0 +1,22 @@
+/* body{
+    background-color: aqua;
+} */
+div{
+    background-color: #dbf1eb;
+    margin: 0px;
+    width: auto;
+    /* height: 40rem; */
+    text-align: center;
+}
+body{
+    margin: 0;
+}
+h1{
+    margin:0;
+}
+.mountain{
+    
+  position:absolute;
+  
+    
+}

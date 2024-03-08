@@ -1,0 +1,35 @@
+.box1{
+    background-color: #e8f7ef;
+    padding: 20px;
+    border: solid 10px;
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    
+}
+.box2{
+    background-color: #e8b350;
+    margin-left: 260px;
+    border:solid 20px;
+    width: 200px;
+    height: 200px;
+    border-color: rgb(232, 121, 96);
+}
+.box3{
+    background-color: #795e92;
+    margin-left: 500px;
+
+    border:solid 10px;
+    width: 200px;
+    height: 200px;
+    border-color: rgb(16, 14, 14);
+}
+h3{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}
+/* *{
+    box-sizing: border-box;
+} */
