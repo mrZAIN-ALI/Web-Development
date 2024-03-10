@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script>
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var pass = document.getElementById("pass").value;
+                var pass2 = document.getElementById("pass2").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+
+                if (name.trim() === "") {
+                    alert("Name must not be empty");
+                    return false;
+                }
+
+                if (phone.length !== 11) {
+                    alert("Phone number must be exactly 12 digits long");
+                    return false;
+                }
+
+                if (!isNaN(name)) {
+                    alert("Name must not contain numbers");
+                    return false;
+                }
+
+                if (pass !== pass2) {
+                    alert("Passwords do not match");
+                    return false;
+                }
+
+                if (pass.length < 8 || pass.length > 12) {
+                    alert("Password must be between 8 and 12 characters");
+                    return false;
+                }
+
+                var atPosition = email.indexOf("@");
+                var dotPosition = email.lastIndexOf(".");
+                if (atPosition < 1 || dotPosition < atPosition + 2 || dotPosition + 2 >= email.length) {
+                    alert("Please enter a valid email address");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" ">
+            <label>Name:</label>
+            <br/>
+            <input type="text" placeholder="Enter your name" id="name" required/>
+            <br/>
+
+            <label>Password:</label>
+            <br/>
+            <input type="password" placeholder="Enter your password" id="pass" required/>
+            <br/>
+
+            <label>Retype Password:</label>
+            <br/>
+            <input type="password" placeholder="Password" id="pass2" required/>
+            <br/>   
+
+            <label>Phone:</label>
+            <br/>
+            <input type="number" placeholder="Phone number" id="phone" required/>
+            <br/>
+
+            <label>Email:</label>
+            <br/>
+            <input type="email" placeholder="Enter your email" id="email" required/>
+            <br/>
+
+            <input type="submit" value="Submit" onclick="return validateForm()" class="btn"/>
+        </form>
+    </body>
+</html>

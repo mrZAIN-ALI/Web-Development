@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Quiz</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+      function validateForm(event) {
+    // event.preventDefault();
+    console.log("In function");
+    let name = document.getElementById('name').value;
+    let address = document.getElementById('address').value;
+    let city = document.getElementById('city').value;
+    let postcode = document.getElementById('postcode').value;
+    // return false;
+
+    if (name==""&&address==""&&city==""&&postcode==""){
+        alert("Field Empty!");
+        return false;
+    }
+
+    if (name === "") {
+        alert("Name field is Empty!");
+    }
+    else {
+        if (!isNaN(name)) {
+            alert("Name contains number!");
+        }
+        if (3 < name.length > 20) {
+            alert("Name length should in between 3 and 20 characters");
+        }
+    }
+
+    if (address === "") {
+        alert("Address field is Empty!");
+    }
+    else {
+        if (3 < address.length > 50) {
+            alert("Address length should in between 3 and 50 characters");
+        }
+    }
+
+    if (city === ""){
+        alert("Phone number is Empty!");
+    }
+    else {
+        if (!isNaN(city)) {
+            alert("City contains number!");
+        }
+    }
+
+    if (postcode === ""){
+        alert("Postcode number is Empty!");
+    }
+    else {
+        if (isNaN(postcode)) {
+            alert("Postcode contains alphabets or symbols!");
+        }
+    }
+}
+    </script>
+</head>
+<body>
+    <header>
+        <div id="first">
+          <div class="logo">2rism <img src="./icons/icons/Vector.png"></div>
+          <div class="nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Hostels</a></li>
+              <li><a href="#">Restaurants</a></li>
+              <li><a href="#">Tours</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Activities</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="second">
+          <h1>Discover the most engaging palces</h1>
+          <button>Discver on 3D globe</button>
+        </div>
+        <div id="third">
+          <div>
+            <div>
+              <img src="./icons/icons/location.png" alt="" />
+              <div>
+                <span>Location</span>
+                <div>Explore nearby</div>
+              </div>
+            </div>
+            <div>
+              <img src="./icons/icons/activities.png" alt="" />
+              <div>
+                <span>Activities</span>
+                <div>All Activities</div>
+              </div>
+            </div>
+            <div>
+              <img src="./icons/icons/calendar.png" alt="" />
+              <div>
+                <span>When</span>
+                <div>Choose a Date</div>
+              </div>
+            </div>
+            <div>
+              <img src="./icons/icons/guest.png" alt="" />
+              <div>
+                <span>Guests</span>
+                <div>I guest</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <form>
+          <table>
+              <tr><td><h2>Trip Plan </h2></td></tr>
+              <tr>
+            <td><b>Name:</b></td>
+            <td><input type="text" name="name" required></td>
+            
+            
+            
+          </tr>
+          <tr>
+            <td><b>Address:</b></td>
+            <td><input type="text" name="address" required></td>
+          </tr>
+          <tr>
+            <td><b>Town/City:</b></td>
+            <td><input type="text" name="city" required></td>
+          </tr>
+          <tr>
+            <td><b>Postcode:</b></td>
+            <td><input type="text" name="postcode" required></td>
+          </tr>
+          <tr>
+            <td><b>No. of days:</b></td>
+            <td>
+              <input type="radio" name="days" value="2">2 days
+              <input type="radio" name="days" value="4">4 days
+              <input type="radio" name="days" value="7">7 days
+            </td>
+          </tr>
+          <tr>
+            <td><b>Persons:</b></td>
+            <td>
+              <input type="radio" name="persons" value="1">One
+              <input type="radio" name="persons" value="2">Two
+              <input type="radio" name="persons" value="4">Four
+            </td>
+          </tr>
+          <tr>
+            <td><b>Departure time:</b></td>
+            <td><input type="time" name="departure_time"></td>
+          </tr>
+          <tr>
+            <td><b>Any instructions:</b></td>
+            <td><textarea name="instructions"></textarea></td>
+          </tr>
+          <tr>
+            <td><b>Service type:</b></td>
+            <td>
+              <input type="checkbox" name="service_type" value="Economy">Economy
+              <input type="checkbox" name="service_type" value="Business">Business
+              <input type="checkbox" name="service_type" value="Executive">Executive
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align:center;">
+              <input type="submit" value="Submit" class="submit-btn" onclick="return validateForm() " >
+            </td>
+          </tr>
+        </table>
+      </form>
+      <div class="footer">
+        <table class="footer_table">
+            <tr>
+                <td >
+                    <p> We always make our customers happy by providing<br> as many choices as possible</p>
+                </td>
+                <td> 
+                    <table class="footer_options">
+                        <tr>
+                            <td><h3>About</h3></td>
+                            <td><h3>Company</h3></td>
+                            <td><h3>Support</h3></td>
+                        </tr>
+                        <tr>
+                            <td>About Us</td>
+                            <td>Why 2rism</td>
+                            <td>Account</td>
+                        </tr>
+                        <tr>
+                            <td>Features</td>
+                            <td>Partner with us</td>
+                            <td>Support Center</td>
+                        </tr>
+                        <tr>
+                            <td>News</td>
+                            <td>FAQ</td>
+                            <td>Feedback</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Menu</td>
+                            <td>Blog</td>
+                            <td>Contact Us</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <p><h3>Subscribe on our destination review </br> newsletter</h3> </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
